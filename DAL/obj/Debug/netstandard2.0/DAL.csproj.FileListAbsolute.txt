@@ -1,0 +1,8 @@
+C:\Users\User\source\repos\DesktopApp\DAL\bin\Debug\netstandard2.0\DAL.deps.json
+C:\Users\User\source\repos\DesktopApp\DAL\bin\Debug\netstandard2.0\DAL.dll
+C:\Users\User\source\repos\DesktopApp\DAL\obj\Debug\netstandard2.0\DAL.csprojAssemblyReference.cache
+C:\Users\User\source\repos\DesktopApp\DAL\obj\Debug\netstandard2.0\DAL.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\DesktopApp\DAL\obj\Debug\netstandard2.0\DAL.AssemblyInfo.cs
+C:\Users\User\source\repos\DesktopApp\DAL\bin\Debug\netstandard2.0\DAL.pdb
+C:\Users\User\source\repos\DesktopApp\DAL\obj\Debug\netstandard2.0\DAL.dll
+C:\Users\User\source\repos\DesktopApp\DAL\obj\Debug\netstandard2.0\DAL.pdb
