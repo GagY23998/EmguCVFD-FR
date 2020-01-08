@@ -11,6 +11,7 @@ namespace DataLayer
 
         public DbSet<User> Users { get; set; }
         public DbSet<Label> Labels { get; set; }
+        public DbSet<Logs> Logs { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             base.OnConfiguring(optionsBuilder);

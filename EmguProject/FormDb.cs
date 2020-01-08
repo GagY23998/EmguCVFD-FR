@@ -123,11 +123,22 @@ namespace EmguProject
                 MessageBox.Show("The person is : " + result, "Info", MessageBoxButtons.OK);
             }
         }
-         
-
         private void btnTrain_Click(object sender, EventArgs e)
         {
             recognitionDB.TrainImages();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            frm_Logs frm = new frm_Logs()
+            {
+                AutoScroll = false,
+                TopLevel = false,
+                FormBorderStyle = FormBorderStyle.None,
+                WindowState = FormWindowState.Maximized
+            };
+            this.Controls.Add(frm);
+            frm.Show();
         }
     }
 }

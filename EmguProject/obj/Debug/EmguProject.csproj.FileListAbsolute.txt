@@ -105,3 +105,17 @@ C:\Users\User\source\repos\DesktopApp\EmguProject\bin\Debug\ru\Microsoft.Data.Sq
 C:\Users\User\source\repos\DesktopApp\EmguProject\bin\Debug\zh-Hans\Microsoft.Data.SqlClient.resources.dll
 C:\Users\User\source\repos\DesktopApp\EmguProject\bin\Debug\zh-Hant\Microsoft.Data.SqlClient.resources.dll
 C:\Users\User\source\repos\DesktopApp\EmguProject\obj\Debug\EmguProject.FormDb.resources
+C:\Users\User\source\repos\DesktopApp\EmguProject\bin\Debug\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+C:\Users\User\source\repos\DesktopApp\EmguProject\bin\Debug\Serilog.dll
+C:\Users\User\source\repos\DesktopApp\EmguProject\bin\Debug\Serilog.Sinks.MSSqlServer.dll
+C:\Users\User\source\repos\DesktopApp\EmguProject\bin\Debug\Serilog.Sinks.PeriodicBatching.dll
+C:\Users\User\source\repos\DesktopApp\EmguProject\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\User\source\repos\DesktopApp\EmguProject\bin\Debug\System.Data.SqlClient.dll
+C:\Users\User\source\repos\DesktopApp\EmguProject\bin\Debug\System.Security.AccessControl.dll
+C:\Users\User\source\repos\DesktopApp\EmguProject\bin\Debug\System.Security.Permissions.dll
+C:\Users\User\source\repos\DesktopApp\EmguProject\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\User\source\repos\DesktopApp\EmguProject\bin\Debug\Microsoft.Extensions.Options.ConfigurationExtensions.xml
+C:\Users\User\source\repos\DesktopApp\EmguProject\bin\Debug\Serilog.xml
+C:\Users\User\source\repos\DesktopApp\EmguProject\bin\Debug\Serilog.Sinks.MSSqlServer.xml
+C:\Users\User\source\repos\DesktopApp\EmguProject\bin\Debug\Serilog.Sinks.PeriodicBatching.xml
+C:\Users\User\source\repos\DesktopApp\EmguProject\obj\Debug\EmguProject.frm_Logs.resources

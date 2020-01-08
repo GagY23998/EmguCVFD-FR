@@ -44,6 +44,7 @@
             this.btnAddUser = new System.Windows.Forms.Button();
             this.btnPredict = new System.Windows.Forms.Button();
             this.btnTrain = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.imgBox_BgrFace)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgBox_DetectedFace)).BeginInit();
             this.SuspendLayout();
@@ -180,11 +181,22 @@
             this.btnTrain.UseVisualStyleBackColor = true;
             this.btnTrain.Click += new System.EventHandler(this.btnTrain_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(78, 305);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(150, 23);
+            this.button1.TabIndex = 17;
+            this.button1.Text = "See Logs";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // FormDb
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnTrain);
             this.Controls.Add(this.btnPredict);
             this.Controls.Add(this.btnAddUser);
@@ -226,5 +238,6 @@
         private System.Windows.Forms.Button btnAddUser;
         private System.Windows.Forms.Button btnPredict;
         private System.Windows.Forms.Button btnTrain;
+        private System.Windows.Forms.Button button1;
     }
 }

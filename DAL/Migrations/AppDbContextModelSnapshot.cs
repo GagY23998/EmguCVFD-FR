@@ -63,7 +63,42 @@ namespace DAL.Migrations
                     b.ToTable("Users");
                 });
 
+            modelBuilder.Entity("DAL.Models.VisitsLog", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Message")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("VisitDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("VisitType")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Visits");
+                });
+
             modelBuilder.Entity("DAL.Models.Label", b =>
+                {
+                    b.HasOne("DAL.Models.User", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("DAL.Models.VisitsLog", b =>
                 {
                     b.HasOne("DAL.Models.User", "User")
                         .WithMany()

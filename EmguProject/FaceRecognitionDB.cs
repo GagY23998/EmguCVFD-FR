@@ -12,6 +12,7 @@ using System.Windows.Forms;
 using System.IO;
 using Emgu.CV.Util;
 using Microsoft.EntityFrameworkCore;
+using Serilog;
 
 namespace EmguProject
 {
@@ -77,12 +78,18 @@ namespace EmguProject
                 var res =faceRecognizer.Predict(image);
                 DAL.Models.Label label = null;
                 //if(res.Distance > threshold)
-                if(res.Distance<5000)
+                if(res.Distance<3500)
                 {
                    label = _context.Labels.FirstOrDefault(_=>_.LabelNumber == res.Label);
-                    var user = _context.Users.FirstOrDefault(_ => _.Id == label.UserId);
+                   var user = _context.Users.FirstOrDefault(_ => _.Id == label.UserId);
+                   Log.Logger.Information("{@VisitDate} User{@username} with UserId {@UserId} {@VisitType} home and has access to House",DateTime.Now,user.FirstName+" "+user.LastName , user.Id);
+                   Log.CloseAndFlush();
                    return user.FirstName + " " + user.LastName;
-                }
+            }
+            else
+            {
+                Log.Logger.Information("{@VisitDate} User{@username} with UserId {@UserId} {@VisitType} home and has access to House", DateTime.Now);
+            }
 
             return string.Empty;
         }
